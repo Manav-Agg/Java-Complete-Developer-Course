@@ -1,0 +1,7 @@
+Reference Vs Object Vs Instance Vs Class
+--> Let's use the anlogy of building a house to understand classes.
+--> A class is basically a blueprint for a house using the blueprint(plans) we can build as many houses as we like based on those plans.
+--> Each house you build (in other words instantiate using the new operator) is an object also known as instance.
+--> Each house you build has an address (a physical location). In other words if you want to tell someone where you live, you give them your address (perhaps written on a piece of paper). This is known as a reference.
+--> You can copy that reference as many times as you like but there is still just one house. In other words we are copying the paper that has address on it not the house itself.
+--> We can pass references as parameters to contructors and methods.

@@ -1,0 +1,17 @@
+this Vs super
+--> The keyword super is used to access/call teh parent class members(variables and methods).
+--> The keyword this is used to call the current class members(variables and methods). This is required when we have a parameter with the same name as an instance variable(field).
+Note: We can use both of them anywhere in a class except static areas(the static block or a static method). Any attempt to do so will lead to compile-time errors.
+
+--> The keyword this is commonly used with constructors and setters and optionally in getters.
+--> The keyword super is commonly used with method overloading, when we call a method with the same name from the parent class.
+--> In other words it is calling the method with the same name form the parent class. Without the keyword super in this case it would be recursive call. Meaning that the method would call it self forever(or until memory is fully used). That is why the super keyword is needed.
+
+this() Vs super() call
+--> Use this() to call a constructor from another overloaded constructor in the same class.
+--> The call to this() can be used only in a constructor, and it must be the first statement in a constructor. It is used with constructor chaining, in other words when one constructor calls another constructor and helps to reduce duplicated code.
+--> The only way to call a parent constructor is by calling super(). This calls the parent constructor.
+--> The call to super() must be the first statement in each constructor.
+--> Even abstract classes hve constructors, although you can never instantiate an abstract class using the new keyword.
+--> An abstract class is still a super class, so its constructors run when soemone makes an instance of a concrete subclass.
+NOte: A constructor can have a call to super() or this() but never both.
